@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="s" class="com.array.Student">
+        <property name="rollno" value="101" />
+        <property name="name" value="Divya" />
+        <property name="mbno">
+        <array>
+        <value>8552056547</value>
+        <value>9874563210</value>
+        </array>
+        </property>
+        </bean>
+        </beans>

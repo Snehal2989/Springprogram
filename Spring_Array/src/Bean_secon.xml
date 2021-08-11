@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="c1" class="com.secondaryArray.Course">
+        <property name="name" value="Java" />
+        <property name="duration" value="6 months"/>
+        </bean>
+        
+        <bean id="c2" class="com.secondaryArray.Course">
+        <property name="name" value="Phython"/>
+        <property name="duration" value="3 months"/>
+        </bean>
+        
+        <bean id="CC" class="com.secondaryArray.Certificate">
+        <property name="name" value="Sccp"/>
+        <property name="cou">
+        <array>
+        <ref bean="c1"></ref> 
+        <ref bean="c2"></ref>
+        </array>
+        </property>
+        </bean>
+        </beans>
