@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="stu" class="com.eagerloading_prototype.Student" scope="prototype"></bean> 
+ 
+ <!--  <bean id="stu" class="com.singleton.Student" scope="singleton"></bean>  --> 
+  
+   <!-- <bean id="col" class="com.prototype.College" scope="prototype"></bean> -->
+   
+   <!--  <bean id="Cou" class="com.lazyloading_singleton.Course" scope="singleton"></bean> -->
+   
+   
+    </beans> 
