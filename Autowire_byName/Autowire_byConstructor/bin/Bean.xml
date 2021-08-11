@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="ad" class="com.constr.Address">
+        <constructor-arg value="Pune"></constructor-arg>
+        <constructor-arg value="440036"></constructor-arg>  <!-- here v were given refrence name and id is different .so it work byType way -->
+        </bean>
+        
+        <bean id="st" class="com.constr.Student" autowire="constructor">
+        <constructor-arg name="sid" value="101"></constructor-arg>
+        <constructor-arg name="sname" value="Priti"></constructor-arg>
+        </bean>
+        </beans>

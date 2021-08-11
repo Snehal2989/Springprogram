@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="add" class="com.task.Address">
+        <property name="areaname" value="wagholi"></property>
+        <property name="city" value="Pune"></property>
+        <property name="pincode" value="440036"></property>
+        </bean>
+        
+        <bean id="ar" class="com.task.Adhar" >
+        <property name="adharnum" value="123456789"></property>
+        <property name="name" value="Snehal chaple"></property>
+        </bean>
+        
+        <bean id="emp" class="com.task.Employee" autowire="byName">
+        <property name="ename" value="Snehal" ></property>
+        <property name="age" value="25"></property>
+        </bean>
+        </beans>

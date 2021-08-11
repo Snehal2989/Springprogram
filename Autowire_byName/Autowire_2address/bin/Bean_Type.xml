@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="ad" class="com.prac.Address" >
+        <property name="city" value="Mumbai"></property>
+        <property name="pincode" value="652103"></property>
+        </bean>
+        
+        <bean id="ad1" class="com.prac.Address" autowire-candidate="false">
+        <property name="city" value="Nashik"></property>
+        <property name="pincode" value="123456"></property>
+        </bean>
+        
+        <bean id="st" class="com.prac.Student" autowire="byType">
+        <property name="rollmo" value="123"></property>
+        <property name="snmae" value="Kunali"></property>
+        </bean>
+        
+        <bean id="emp" class="com.prac.Employee" autowire="byType">  
+        <property name="eid" value="889"></property>
+        <property name="ename" value="Pyare"></property>
+        </bean>
+        </beans>
+        
+        <!--  here v cant create the 2 bean of address bz it confused which add have to take bz in bttype method it serach by using class name-->
+        <!-- to overcome these problem using autowire-canditate =false,bz of these particular bean become invisible -->
+        <!-- if autowire-can=true means vivble,autowire-candidate=default= -->

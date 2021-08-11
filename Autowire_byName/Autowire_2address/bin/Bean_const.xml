@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="c" class="com.cost.Course" >   <!-- bean id="cse"   so in constructor way it will work as byName type-->
+       <constructor-arg name="cid" value="10"></constructor-arg>
+       <constructor-arg name="cname" value="Java"></constructor-arg>
+        </bean>
+        
+        <bean id="c1" class="com.cost.Course" autowire-candidate="false">  <!-- bz of 2 bean it confused  -->
+        <constructor-arg name="cid" value="3"></constructor-arg>
+        <constructor-arg name="cname" value="Phython"></constructor-arg>
+        </bean>
+        
+        <!-- so in constructor 2 ways to solve these exception 1.byName means have to give ref name and id name same 2.autowire-candidate=false -->
+        <bean id="s" class="com.cost.Student" autowire="constructor" >
+        <constructor-arg name="sid" value="101"></constructor-arg>
+        <constructor-arg name="name" value="Sonu"></constructor-arg>
+        <constructor-arg name="qual" value="Engg"></constructor-arg>
+        </bean>
+        </beans>

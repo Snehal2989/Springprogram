@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="bt" class="com.byType.Batch">
+        <property name="bid" value="134"></property>
+        <property name="bname" value="April"></property>
+        </bean>
+        
+      <!--    <bean id="bt1" class="com.byType.Batch">
+        <property name="bid" value="135"></property>   here v cant give two bean in bytype so it gives exception for removing exception
+                                                         use autowire-candidate=false means it hides
+        <property name="bname" value="Feb"></property>
+        </bean>-->
+        
+        <bean id="cou" class="com.byType.Course" autowire="byType">
+        <property name="cid" value="111"></property>
+        <property name="cname" value="Java"></property>
+        </bean>
+        </beans>
