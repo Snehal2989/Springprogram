@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="mycoll" class="com.collection.Mycollection">
+        <property name="sname">
+        <list>
+        <value>Yuvi</value>
+        <value>Prajakta</value>
+        <value>Dimpi</value>
+        <value>Yuvi</value>
+        </list>
+        </property>
+        
+        <property name="course">
+        <set>
+        <value>Java</value>
+        <value>Phyton</value>
+        <value>Php</value>
+        <value>java</value>
+        </set>
+        </property>
+        
+        <property name="Batch">
+        <map>
+        <entry key="134" value="Karvenagar"></entry>
+        <entry key="135" value="Akurdi"></entry>
+        <entry key="133" value="Wadgao sheri"></entry>
+        <entry key="134" value="Akurdi2135435"></entry>
+        </map>
+        </property>
+        
+        <property name="prop">
+        <props>
+        <prop key="10">Boys</prop>
+        <prop key="20">Girls</prop>
+        <prop key="15">StaffS</prop>
+        </props>
+        </property>
+        </bean>
+        </beans>
