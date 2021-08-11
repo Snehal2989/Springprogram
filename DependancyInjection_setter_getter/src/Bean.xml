@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--  <bean id="emp" class="Setter_getter.Employe">
+    <property name="eid" value ="101"></property>
+    <property name="ename" value="Raj"></property>
+    <property name="desg" value="engg"></property>
+    </bean>
+    
+     <bean id="emp1" class="Setter_getter.Employe">
+    <property name="eid" value ="102"></property>
+    <property name="ename" value="Durga"></property>y
+    <property name="desg" value="Ceo"></property>
+    </bean> -->
+    
+   <!--  <bean id="com" class="com.object.Company">
+   <property name="cid" value="887"></property>
+   <property name="cname" value="Mahindra"></property>
+    </bean>
+    
+    <bean id="emp" class="com.object.Employee">
+    <property name="eid" value="101"></property>
+    <property name="ename" value="Vitthal"></property>
+    <property name="edesgn" value="engg"></property>
+    <property name="comp" ref="com"></property>
+    </bean>  -->
+    
+    <bean id="mycoll" class="com.collection.Mycollection">
+    <property name="Mycourse">
+    <list>
+    <value>Java</value>
+    <value>Phython</value>
+    </list>
+    </property>
+    
+    <property name="Batch">
+    <set>
+    <value>B135</value>
+    <value>134</value>
+    </set>
+    </property>
+    
+    <property name="Mymap">
+    <map>
+    <entry key ="15" value="Pune"></entry>
+    <entry key ="16" value="Nagpur"></entry>
+    </map>
+    </property>
+    
+    <property name="Myprop">
+    <props>
+    <prop key="1">Raj</prop>
+    <prop key="2">Deepak</prop>
+    </props>
+    </property>
+    </bean>
+    
+    </beans>
