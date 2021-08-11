@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="mycol" class="com.collecction.MyCollection">
+        <constructor-arg >
+        <list>
+        <value>Raj</value>
+        <value>Depak</value>
+        <value>Kiran</value>
+        </list>
+        </constructor-arg>
+        
+        
+        <constructor-arg>
+        <set>
+        <value>25000</value>
+        <value>30050</value>
+        <value>15050</value>
+        </set>
+        </constructor-arg>
+        
+        <constructor-arg>
+        <map>
+        <entry key="10" value="Nagpur"></entry>
+        <entry key="20" value="Pune"></entry>
+        <entry key="30" value="Amravati"></entry>
+        </map>
+        </constructor-arg>
+        
+        <constructor-arg>
+        <props>
+        <prop key="5">Engg</prop>
+        <prop key="10">Manager</prop>
+        <prop key="2">Worker</prop>
+        </props>
+        </constructor-arg>
+        
+        </bean>
+        </beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+        <!--  by default it call string one constructor ,so if u want to call particular constructor use type -->
+        
+        <!-- if u ant to change the sequence of int then use index ,indexing starting from 0-->
+        <bean id="adi" class="com.ambiguty.Addition" >
+        <constructor-arg value="250" type="int" index="1"></constructor-arg>
+        <constructor-arg value="350" type="int" index="0"></constructor-arg>  
+        </bean>
+        </beans>
