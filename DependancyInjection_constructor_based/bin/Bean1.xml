@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+        <bean id="adh" class="com.task.Adharcard">
+        <constructor-arg value ="12345678"></constructor-arg>
+        <constructor-arg value ="Manoj tiwari"></constructor-arg>
+        </bean>
+        <bean id="emp" class="com.task.Employee">
+        <constructor-arg value="1122"></constructor-arg>
+        <constructor-arg value="Ragini"></constructor-arg>
+        <constructor-arg ref="adh"></constructor-arg>
+        </bean>
+        </beans>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!--   <bean id="stud" class="com.setter_getter.Student">
+    <constructor-arg value="101"></constructor-arg>
+    <constructor-arg value="Snehal"></constructor-arg>
+    <constructor-arg value="Pune"></constructor-arg>
+    </bean> -->
+    
+    
+   <!--  <bean id="ad" class="com.object.Address">
+    <constructor-arg value="Karvenagar"></constructor-arg>
+    <constructor-arg value ="Mumbai"></constructor-arg>
+    </bean>
+    
+    <bean id="St" class="com.object.Student">
+    <constructor-arg value="1"></constructor-arg>
+    <constructor-arg value="Pinki"></constructor-arg>
+    <constructor-arg value="pune"></constructor-arg>
+    <constructor-arg ref="ad"></constructor-arg>
+    </bean>-->
+    
+    <bean id="Mycol" class="com.collection.Mycollection">
+    <constructor-arg>
+    <list>
+   <value>Pune</value>
+   <value>Mumbai</value>
+   <value>Nagpur</value>
+    </list>
+    </constructor-arg>
+    
+    <constructor-arg>
+    <set>
+    <value>Maharashtra</value>
+    <value>Telanga</value>
+    <value>Gujrat</value>
+    </set>
+    </constructor-arg>
+    
+    <constructor-arg>
+    <map>
+    <entry key ="1" value="Airoli"></entry>
+    <entry key ="2" value ="Karvenagr"></entry>
+    <entry key ="3" value ="Wakad"></entry>
+    </map>
+    </constructor-arg>
+    
+    <constructor-arg>
+    <props>
+    <prop key="101">GreenNature</prop>
+    <prop key="102">More Pollution</prop>
+    </props>
+    </constructor-arg>
+    </bean>
+     </beans>
