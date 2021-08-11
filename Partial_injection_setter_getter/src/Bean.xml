@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="comp" class="com.setter_getter.Company">
+    <property name="cid" value="12345"></property>
+    <property name="cname" value="Mahindra"></property>
+    </bean>
+     <bean id="comp1" class="com.setter_getter.Company">
+    <property name="cid" value="56789"></property>
+    <property name="caddr" value="pune"></property>
+    </bean>
+    
+    <bean id="comp2" class="com.setter_getter.Company">
+    <property name="cname" value="TAL"> </property>
+    <property name="cid" value="112255"></property>
+    <property name="caddr" value="Nagpur"></property>
+    </bean>
+    </beans>
